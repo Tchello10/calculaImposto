@@ -25,3 +25,9 @@ h1 {
   color: rgb(0, 255, 50);
   text-shadow: 3px 3px 4px rgba(255, 0, 230, 0.452);
 }
+
+h2.title-resultado {
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(0, 255, 50);
+  text-shadow: 3px 3px 4px rgba(255, 0, 230, 0.452);
+}

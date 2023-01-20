@@ -1,24 +1,24 @@
 console.log("Funcionou o JS");
 
-let inputValor = document.getElementById("valorCota");
-let inputQtd = document.getElementById("qtdCota");
-let resultado = document.getElementById("testOutput");
+var resultado = 0;
+var totalCotas = 0;
+var qtdCotas = 0;
 
-let timeout = null;
+resultado = document.querySelector("#testOutput").value;
+totalCotas = document.querySelector("#valorCota").value;
+qtdCotas = document.querySelector("#qtdCota").value;
 
-if (inputQtd != null || inputValor != null) {
-  inputQtd.addEventListener("keyup", function (e) {
-    clearTimeout(timeout);
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Enter") {
+    console.log(event);
 
-    timeout = setTimeout(function () {
-      console.log("Input Value: ", valorCota.value * qtdCota.value);
-    }, 1000);
-  });
-  inputValor.addEventListener("keyup", function (e) {
-    clearTimeout(timeout);
+    var media = totalCotas / qtdCotas;
 
-    timeout = setTimeout(function () {
-      resultado.innerHTML("Input Value: ", valorCota.value * qtdCota.value);
-    }, 1000);
-  });
-}
+    console.log(media);
+    console.log(totalCotas);
+    console.log(qtdCotas);
+
+    document.querySelector("#testOutput").innerHTML = media;
+  } else {
+  }
+});
