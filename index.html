@@ -16,12 +16,15 @@
 
     <div class="valores">
 
-        <input type="number" name="valor-Cota" id="valorCota" placeholder="Valor total" class="caixaInsert">
+        <input type="number" name="custo-medio" id="mediaCota" placeholder="Custo médio" class="caixaInsert">
+
+        <input type="number" name="valor-Atual" id="valorAtual" placeholder="Valor atual da cota" class="caixaInsert">
 
         <input type="number" name="quantidade-Cota" id="qtdCota" placeholder="Quantidade de cotas" class="caixaInsert">
 
-        <h2 class="title-resultado">Valor médio da sua compra é: </h2>
-        <h2 class="title-resultado"><span id="testOutput"></span></h2>
+        <h2 class="title-resultado"><span id="avisaLucroPreju"></span></h2>
+
+        <h2 class="title-resultado"><span id="avisaImposto"></span></h2>
     </div>
 
     <script src="calculadora.js"></script>
