@@ -1,14 +1,12 @@
 console.log("Funcionou o JS");
 
-var resultado = 0;
-var totalCotas = 0;
-var qtdCotas = 0;
-
-resultado = document.querySelector("#testOutput").value;
-totalCotas = document.querySelector("#valorCota").value;
-qtdCotas = document.querySelector("#qtdCota").value;
+document.querySelector("#testOutput").innerHTML = "R$0,00";
 
 document.addEventListener("keyup", (event) => {
+  var resultado = document.querySelector("#testOutput").value;
+  var totalCotas = document.querySelector("#valorCota").value;
+  var qtdCotas = document.querySelector("#qtdCota").value;
+
   if (event.key == "Enter") {
     console.log(event);
 
@@ -18,7 +16,8 @@ document.addEventListener("keyup", (event) => {
     console.log(totalCotas);
     console.log(qtdCotas);
 
-    document.querySelector("#testOutput").innerHTML = media;
+    document.querySelector("#testOutput").innerHTML = "R$" + media;
   } else {
+    document.querySelector("#testOutput").innerHTML = "0";
   }
 });
