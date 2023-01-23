@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de imposto</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Content/CSS/style.css">
+
+    <script src="./Content/JS/calculadora.js"></script>
 </head>
 <body>
 
-    <img src="./Content/SubBadge.png" alt="Logo T 10 multimedia">
+    <img src="./Content/Images/SubBadge.png" alt="Logo T 10 multimedia">
 
-    <h1>Calculadora de preço médio</h1>
+    <h1>Calculadora de imposto</h1>
+    <h2>Forneça os valores abaixo e aperte enter</h2>
 
     <div class="valores">
 
@@ -22,11 +25,11 @@
 
         <input type="number" name="quantidade-Cota" id="qtdCota" placeholder="Quantidade de cotas" class="caixaInsert">
 
+        <button id="clicaCalcula" onmousedown="calculadora();">Calcular</button>
+
         <h2 class="title-resultado"><span id="avisaLucroPreju"></span></h2>
 
         <h2 class="title-resultado"><span id="avisaImposto"></span></h2>
     </div>
-
-    <script src="calculadora.js"></script>
 </body>
 </html>
