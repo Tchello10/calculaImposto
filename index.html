@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de imposto</title>
 
+    <link rel="stylesheet" href="./Content/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./Content/CSS/style.css">
 
     <script src="./Content/JS/calculadora.js"></script>
 </head>
-<body>
+<body class="corpo-fundo">
 
-    <img src="./Content/Images/SubBadge.png" alt="Logo T 10 multimedia">
+    <div class="container text-center">
+        <img src="./Content/Images/SubBadge.png" alt="Logo T 10 multimedia" class="rounded float-start">
+        <h1 class="row align-items-center">Calculadora de imposto</h1>
+        <h2 class="row align-items-center">Forneça os valores abaixo e aperte enter</h2>
+    </div>
 
-    <h1>Calculadora de imposto</h1>
-    <h2>Forneça os valores abaixo e aperte enter</h2>
+    <div class="container">
+        <div class="valores row">
 
-    <div class="valores">
+            <input type="number" name="custo-medio" id="mediaCota" placeholder="Custo médio" class="caixaInsert col-4">
 
-        <input type="number" name="custo-medio" id="mediaCota" placeholder="Custo médio" class="caixaInsert">
+            <input type="number" name="valor-Atual" id="valorAtual" placeholder="Valor atual da cota"
+                class="caixaInsert col-4">
 
-        <input type="number" name="valor-Atual" id="valorAtual" placeholder="Valor atual da cota" class="caixaInsert">
+            <input type="number" name="quantidade-Cota" id="qtdCota" placeholder="Quantidade de cotas"
+                class="caixaInsert col-4">
 
-        <input type="number" name="quantidade-Cota" id="qtdCota" placeholder="Quantidade de cotas" class="caixaInsert">
+            <div class="col-12"></div>
+            <button id="clicaCalcula" onmousedown="calculadora();" class="col-12 btn btn-secondary">Calcular</button>
 
-        <button id="clicaCalcula" onmousedown="calculadora();">Calcular</button>
+            <h2 class="title-resultado col-12"><span id="avisaLucroPreju"></span></h2>
 
-        <h2 class="title-resultado"><span id="avisaLucroPreju"></span></h2>
-
-        <h2 class="title-resultado"><span id="avisaImposto"></span></h2>
+            <h2 class="title-resultado col-12"><span id="avisaImposto"></span></h2>
+        </div>
     </div>
 </body>
 </html>
