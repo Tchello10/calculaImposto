@@ -38,6 +38,7 @@ function calculadora() {
         "Parabéns, você teve um lucro de: R$" +
         lucro +
         " e está livre de impostos";
+      document.querySelector("#avisaImposto").innerHTML = "";
     }
   }
 }
